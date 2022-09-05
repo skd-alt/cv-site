@@ -7,7 +7,7 @@ import os
 import smtplib
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "eoo5544yuui7899"
+app.config['SECRET_KEY'] = os.environ.get("SECRETKEY")
 
 Bootstrap5(app)
 
