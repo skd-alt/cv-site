@@ -6,7 +6,8 @@
     <main>
       <div class="row">
         <div class="col-lg-6 col-md-6">
-<!--      {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}-->
+      {{ render_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+            {{ form.csrf_token }}
       <br>
       <div><i class="fa-solid fa-phone fa-xl"></i> +27 79 914 9833</div>
       <br>
