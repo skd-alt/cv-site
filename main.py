@@ -16,7 +16,7 @@ class ContactForm(FlaskForm):
     email = EmailField("Email", validators=[DataRequired()])
     name = StringField("Name", validators=[DataRequired()])
     message = TextAreaField("Message", validators=[DataRequired()])
-    submit = SubmitField("Sign Me Up!")
+    submit = SubmitField("Send")
 
 
 @app.route('/')
