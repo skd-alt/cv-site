@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+
+    <main>
+      <div class="dash-content">
+        <div class="row">
+
+          <div class="col-12 solid-border">
+            <div class="row">
+              <div class="col-lg-2 col-md-2">
+                <img class="dash-profile-pic" src="{{ url_for('static', filename='images/IMG-20181223-WA0009.jpg') }}" alt="">
+
+              </div>
+              <div class="col-8">
+                <h2>Sipho Dingani</h2>
+                <p>116 Bellairs Road, Northriding, Johannesburg, Gauteng, South Africa</p>
+
+              </div>
+              <div class="col-2">
+                <a href="{{ url_for('contact') }}" type="button" class="btn btn-primary px-4 me-md-2">Contact Me</a>
+              </div>
+            </div>
+          </div>
+
+          <div class=" solid-border">
+
+            <hr>
+            <h3>Education</h3>
+
+            <div class="row form-group">
+              <div class="col-lg-6 mb-3">
+                <label for="nameOfInstitution" class="form-label"><strong>Name of Institution:</strong></label>
+                <div>Unversity of Zimbabwe</div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>Qualification:</strong></label>
+                <div>Bsc Statistics 2.1 and Mathematics 2.2</div>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>End Date:</strong></label>
+                <div>July 1, 2022</div>
+              </div>
+            </div>
+            <br>
+
+            <div class="row form-group">
+              <div class="col-lg-6 mb-3">
+                <label for="nameOfInstitution" class="form-label"><strong>Name of Institution:</strong></label>
+                <div>University of Cape Town</div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>Qualification:</strong></label>
+                <div>Certificate in Data Science with Python</div>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>End Date:</strong></label>
+                <div>March, 2020</div>
+              </div>
+            </div>
+            <br>
+
+            <hr>
+            <h3>Employment History</h3>
+
+
+            <br>
+            <div class="col-lg-6 mb-3">
+              <label for="nameOfInstitution" class="form-label"><strong>Currently at Allix Consulting as a Data Scientist:</strong></label>
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Job Description:</strong></label>
+              <div>Modeling data using machine learning techniques. Using algorithms for predictive analysis. Website Applications with Dashboards. Data Analysis using Python and Excel. Data Analysis on various insurance data for clients. I also use
+                other technologies such as MySQL, MongoDB, Django, Java and PowerBI
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>Start Date:</strong></label>
+                <div>1 March, 2020</div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>End Date:</strong></label>
+                <div>-</div>
+              </div>
+            </div>
+
+
+            <br>
+            <div class="col-lg-6 mb-3">
+              <label for="nameOfInstitution" class="form-label"><strong>Access Advertising as a Programmer & Statistician:</strong></label>
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Job Description:</strong></label>
+              <div>Website design using PHP, MySQL, WordPress, Python and Django. Updating and maintaining of the site. Creating and designing adverts. Maintain the computerized application processing system. Upgrade and update the software to meet
+                with the changing demands of the company. Develop staff capacity to use the computerized application systems. IT support and Trouble shooting. Carry out statistical analysis of data and preparation of statistical outputs. Identifying
+                new markets for growth and analysis on customer retention. Search Engine Optimisation and handling the digital marketing.
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>Start Date:</strong></label>
+                <div>02 February, 2009 </div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>End Date:</strong></label>
+                <div>28 February, 2021</div>
+              </div>
+            </div>
+
+            <br>
+            <div class="col-lg-6 mb-3">
+              <label for="nameOfInstitution" class="form-label"><strong>Head Hunters (Pvt) Ltd as a Research and Survey Consultant:</strong></label>
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"><strong>Job Description:</strong></label>
+              <div>I carry out different surveys that help companies in policy formulation and implementation.
+                • Salary Survey.
+                o Market Research
+                o National Salary Surveys
+                o Medical Sector Surveys
+                o Insurance Surveys
+                o Executive & Non Executive Directors Remuneration Surveys
+                o Time Series Analysis
+                • Customer perception Surveys
+                • Employee attitude Surveys
+                • Stakeholders Analysis Surveys
+                • Market research Surveys
+                In charge of website design and updating.
+                I was in charge of all IT requirements and trouble shooting
+
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>Start Date:</strong></label>
+                <div>01 October, 2008 </div>
+              </div>
+              <div class="col-lg-6 mb-3">
+                <label for="qualification" class="form-label"><strong>End Date:</strong></label>
+                <div>31 December, 2008</div>
+              </div>
+            </div>
+
+            <hr>
+
+            <p>
+              See more <a href="{{ url_for('static', filename='images/CV-SiphoDingani.pdf') }}">download C.V.</a>
+
+            </p>
+
+          </div>
+        </div>
+
+
+      </div>
+    </main>
+
+  {% include "footer.html" %}
+
+{% endblock %}

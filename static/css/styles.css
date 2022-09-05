@@ -1,0 +1,32 @@
+body {
+  background-color: #212529;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-top {
+  text-align: center;
+}
+
+.home-profile-pic {
+  width: 300px;
+  height: 300px;
+  border: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+.footer-band {
+  padding: 1em 5em;
+  background-color: #000000;
+}
+
+.dash-profile-pic {
+  width: 100px;
+  height: 100px;
+  border: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 50%;
+}
