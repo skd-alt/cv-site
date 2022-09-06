@@ -11,13 +11,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link {% if request.path == '' %} active{% endif %}" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                  <a class="nav-link {% if request.path == '/' %} active{% endif %}" aria-current="page" href="{{ url_for('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('about') }}">About Me</a>
+                  <a class="nav-link {% if 'about' in request.path %} active{% endif %}" href="{{ url_for('about') }}">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('contact') }}">Contact Me</a>
+                  <a class="nav-link {% if 'contact' in request.path %} active{% endif %}" href="{{ url_for('contact') }}">Contact Me</a>
                 </li>
               </ul>
 
